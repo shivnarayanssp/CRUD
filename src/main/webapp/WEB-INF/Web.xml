@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>UserDbApp</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>jd</servlet-name>
+    <servlet-class>my.SearchEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jd</servlet-name>
+    <url-pattern>/jd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>jd2</servlet-name>
+    <servlet-class>my.RegisterEmployeer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jd2</servlet-name>
+    <url-pattern>/jd2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>jd3</servlet-name>
+    <servlet-class>my.EmployeeProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jd3</servlet-name>
+    <url-pattern>/jd3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>pu</servlet-name>
+    <servlet-class>my.PrintEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pu</servlet-name>
+    <url-pattern>/pu</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>up</servlet-name>
+    <servlet-class>my.EmployeeProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>up</servlet-name>
+    <url-pattern>/up</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>my.LoginEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>my.LogoutEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>EmployeeProfileResiter</servlet-name>
+    <url-pattern>/ep</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
